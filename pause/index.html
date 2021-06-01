@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Aplicativo Web</title>
+        <style>
+            .container{
+                text-align: center;
+            }
+            button{
+                background: #069;
+                color:white;
+                font-size: 32px;
+                padding: 8px 20px;
+                cursor: pointer;
+                border: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <audio id="sound">
+        <source src="comoquefaz.mp3" style="display:none">
+        <source src="mcmarks-deus-e-por-nos-a02b358b.mp3" style="display:none">
+    </audio>
+        <div class="container">
+           <button id="PlaypauseBTN" onclick="playPause()"> PLAY</button>
+           <button onclick="stop()"> Pause</button>
+           <button>Próximo</button>
+           <div id="display">
+               <h3></h3>
+           </div>
+        </div>
+        <script src="script.js"></script>
+        </body>
+</html>
